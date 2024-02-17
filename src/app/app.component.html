@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body class="bg-gray-900">
+  <body class="bg-gray-900">
   
-  <app-navbar></app-navbar>
-  <router-outlet></router-outlet>
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
 
-    <div class="container mx-auto mt-5 flex justify-center h-ful">
+    
+    <!-- Home Page -->
+      <div class="container mx-auto mt-5 flex justify-center h-full">
       <!-- Flex Container -->
       <div class="flex h-5/6  w-screen">
         <!-- Box 1 -->
@@ -24,7 +26,35 @@
           <img src="assets/animation.gif" class="h-96 w-auto justify-items-center">
         </div>
       </div>
+      </div>
+    
+
+    <div class="bg-white">
+
+      <div class="custom-shape-divider-top-1708190015 z-0">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <div class="container mx-auto mt-14 justify-center h-full w-auto">
+      <div class="flex justify-center z-10">
+        <h1 class="text-5xl text-white font-bold z-10">Past Projects</h1>
+      </div>
+      </div>
+
+      <div class="flex justify-center z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 place-content-center z-10">
+          <div class="h-full size-80 h-80 bg-white rounded-lg shadow-lg mx-2 p-5">01</div>
+          <div class="h-full size-80 h-80 bg-white rounded-lg shadow-lg mx-2 p-5">02</div>
+          <div class="h-full size-80 h-80 bg-white rounded-lg shadow-lg mx-2 p-5">03</div>
+          <div class="h-full size-80 h-80 bg-white rounded-lg shadow-lg mx-2 p-5">01</div>
+          <div class="h-full size-80 h-80 bg-white rounded-lg shadow-lg mx-2 p-5">02</div>
+          <div class="h-full size-80 h-80 bg-white rounded-lg shadow-lg mx-2 p-5">03</div>
+        </div>
+      </div>
     </div>
+
   
-</body>
+  </body>
 </html>
