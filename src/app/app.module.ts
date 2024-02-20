@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
