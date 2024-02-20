@@ -23,8 +23,8 @@
 /** For mobile devices **/
 @media (max-width: 767px) {
     .custom-shape-divider-top-1708190015 svg {
-        width: calc(275% + 1.3px);
-        height: 300px;
+        width: calc(100% + 1.3px);
+        height: 350;
     }
 }
 
