@@ -14,20 +14,16 @@
     </div>
   </nav> -->
 
-<nav class="bg-gray-900 fixed top-0 z-50 w-full p-5 lg:hidden">
-  <div class="container mx-auto flex justify-between items-center">
-    <a href="#"> <img src="assets/3.png" alt="logo" class="w-10 h-10 ml-3"></a>
-
-    <a href="#sidebars" class="flex items-end">
-      <i class="fas fa-solid fa-bars text-2xl text-white mr-3">
-
-      </i>
-    </a>
-
-
-  </div>
-</nav>
-
+  <nav class="bg-gray-900 fixed top-0 z-50 w-full p-5 lg:hidden">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#"> <img src="assets/3.png" alt="logo" class="w-10 h-10 ml-3"></a>
+  
+      <!-- Toggle Button -->
+      <a (click)="toggleSidebar()" class="flex items-end" id="hamburger">
+        <i class="fas fa-solid fa-bars text-2xl text-white mr-3"></i>
+      </a>
+    </div>
+  </nav>
 
 <!-- web -->
 <nav class="bg-gray-900 p-5 fixed top-0 z-50 w-full hidden lg:block">
@@ -43,6 +39,20 @@
       </ul>
     </div>
   </nav>
-  
+
+  <!--sidebar-->
+  <div *ngIf="isSidebarOpen" class="sidebar bg-gray-900 text-white w-64 h-full fixed top-0 right-0 transition-all duration-300 ease-in-out z-50">
+    <a (click)="toggleSidebar()" class="absolute top-0 right-0 m-8" id="close">
+        <i class="fas fa-solid fa-window-close text-2xl text-white"></i>
+    </a>
+    <div class="flex justify-center items-center h-full">
+        <ul class="text-center">
+            <li class="py-4"><a href="#" class="block">HOME</a></li>
+            <li class="py-4"><a href="#pastproj" class="block">PORTFOLIO</a></li>
+            <li class="py-4"><a href="#contacts" class="block">CONTACTS</a></li>
+        </ul>
+    </div>
+</div>
+
 
    
