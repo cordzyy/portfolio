@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isSidebarVisible: boolean = false;
+  title = 'portfolio';
 
   toggleSidebar() {
     this.isSidebarVisible = !this.isSidebarVisible;
