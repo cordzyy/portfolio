@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CarouselComponent implements OnInit {
   currentIndex = 0;
   images = [
-    { src: 'assets/alampay1.jpg', alt: 'Image 1' },
+    { src: 'assets/gradpic.jpg', alt: 'Image 1' },
     { src: 'assets/3.jpg', alt: 'Image 2' },
     { src: 'assets/bicolit.jpg', alt: 'Image 3' },
     { src: 'assets/5.jpg', alt: 'Image 4' }
