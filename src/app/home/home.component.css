@@ -33,6 +33,12 @@
     animation: 3s spin linear infinite;
 }
 
+@media (max-width: 600px){
+    .cardAnimation{
+        flex-direction: column;
+    }
+}
+
 .cardAnimation::before{
     filter: blur(1.5rem);
     opacity: 0.5;
